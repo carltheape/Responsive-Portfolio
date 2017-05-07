@@ -83,7 +83,7 @@ img.portrait{
 .name{font-family: 'Georgia', Times, Times New Roman, serif;
 	color: white;
 	background-color: teal;
-	width: 200px;
+	width: auto;
 	padding: 25px;
 	position: relative;
 	bottom: 9px;
@@ -139,7 +139,7 @@ img.portrait{
 	padding: 5px;
 }
 
-img.network:hover {
+img.network: hover {
     box-shadow: 0 0 2px 1px orange;
  }
 
@@ -147,8 +147,8 @@ img.network:hover {
 	color: teal;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	text-align: center;
-	border-bottom: 2px solid lightgrey;
-	width: 240px;
+	border-bottom: 0px solid lightgrey;
+	width: 100%;
 }
 
 .folio{
@@ -175,7 +175,7 @@ img.network:hover {
 
 }
 
-.left{
+/*.left{
 	float: left;
 	width: 43%;
 	margin-left: 25px;
@@ -185,7 +185,7 @@ img.network:hover {
 	float: right;
 	width: 43%;
 	margin-right: 25px;
-}
+}*/
 
 .container{
 	width: 600px;
@@ -258,14 +258,24 @@ input[type=submit] {
     	display: flex;
 		flex-direction: row;
 		width: 100%;
-		align-items: center;
-  		justify-content: center;
+		align-items: flex-stretch;
+  		justify-content: space-around;
+
+	}
+	.flex-icons {
+		display: -webkit-flex;
+    	display: flex;
+		flex-direction: row;
+		width: 100%;
+		align-items: flex-stretch;
+  		justify-content: space-around;
 
 	}
 	.name{
 		width: 100%;
 		text-align: center;
 	}
+
 	.links{
 		width: 33%;
 		border-left: none;
@@ -274,19 +284,10 @@ input[type=submit] {
 		top: 0px;
 		padding: 5px;
 	}
+
 	.wrapper{
 		width: 100%;
 	}
-
-/*	.flex-about{
-		display: -webkit-flex;
-    	display: flex;
-		width: 100%;
-		flex-direction: column;
-		padding: none;
-		text-align: center;
-		margin: auto;
-	}*/
 
 	img.portrait{
 		max-width: 100%;
@@ -298,11 +299,11 @@ input[type=submit] {
 	.about{
 		display: -webkit-flex;
     	display: flex;
-		width: 100%;
 		text-align: center;
-		margin: 25px;
+		margin-left: 0px;
 		align-items: center;
   		justify-content: center;
+  		width: 100%;
 	}
 
 	.sidebar{
@@ -324,5 +325,29 @@ input[type=submit] {
   		justify-content: center;
 
 	}
+/*	h2{
+		margin: 0px;
+	}
+
+	head{
+		margin-left: 25px;
+		margin-right: 25px;
+		
+	}
+	
+	body{
+		margin-left: 25px;
+		margin-right: 25px;
+		
+
+	}
+
+	footer{
+		margin-left: 25px;
+		margin-right: 25px;
+
+
+	}*/
 
 }
+
