@@ -69,6 +69,7 @@ img.portrait{
 .heading{background-color: white;
 		min-height: 100px;
 		margin-bottom: 15px;
+		width: 100%;
 
 }
 
@@ -153,9 +154,8 @@ img.network: hover {
 
 .folio{
 	/*margin: auto;*/
-	width: 90%;
 	display: block;
-	object-fit: none; /* Do not scale the image */
+/*	object-fit: none;  Do not scale the image */
   	object-position: center; /* Center the image within the element */
   	height: 100%;
   	width: 100%;
@@ -235,3 +235,288 @@ input[type=submit] {
     cursor: pointer;
 }
 
+@media screen and (max-width: 640px) {
+    .flex-heading {
+    	display: -webkit-flex;
+    	display: flex;
+    	flex-direction: column;
+    	width: 100%;
+
+	}
+	.flex-body {
+		display: -webkit-flex;
+    	display: flex;
+    	flex-direction: column-reverse;
+    	width: 100%;
+
+	}
+	.body {
+		width: 100%;
+	}
+	.flex-links {
+		display: -webkit-flex;
+    	display: flex;
+		flex-direction: row;
+		width: 100%;
+		align-items: flex-stretch;
+  		justify-content: space-around;
+
+	}
+	.flex-icons {
+		display: -webkit-flex;
+    	display: flex;
+		flex-direction: row;
+		width: 100%;
+		align-items: flex-stretch;
+  		justify-content: space-around;
+
+	}
+	.name{
+		width: 100%;
+		text-align: center;
+	}
+
+	.links{
+		width: 33%;
+		border-left: none;
+		border-right: none;
+		background-color: white;
+		top: 0px;
+		padding: 5px;
+	}
+
+	.wrapper{
+		width: 100%;
+	}
+
+	.flex-port{
+		display: -webkit-flex;
+    	display: flex;
+		flex-direction: column;
+/*		width: 100%;
+		align-items: flex-stretch;
+  		justify-content: space-around;*/
+	}
+
+	.left{
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	.right{
+		width: 100%;
+		margin-right: 0px;
+	}
+
+	.pic{
+		height: 90%;
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+	}
+	.folio{
+	margin-right: auto;
+	margin-left: auto;
+  	height: 90%;
+  	width: 90%;
+  	display: block;
+
+  }
+
+	.foliotext{
+	position: relative;
+	width: 90%;
+	text-align: center;
+	bottom: 75px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	bottom: 10px;
+}
+	.about{
+		width: 92%;
+	}
+	.name{
+		width: 92%;
+	}
+
+	.sidebar{
+		width: 100%;
+		display: -webkit-flex;
+    	display: flex;
+		flex-direction: column;
+	}
+		img.network{
+		width: 85.6px;
+		height: 85.6px;
+	}
+
+}
+
+@media screen and (max-width: 768px) and (min-width: 641px) {
+/*    .flex-heading {
+    	display: -webkit-flex;
+    	display: flex;
+    	flex-direction: column;
+    	width: 100%;
+	}*/
+	.flex-body {
+		display: -webkit-flex;
+    	display: flex;
+    	flex-direction: column-reverse;
+    	width: 100%;
+
+	}
+
+	.flex-icons {
+		display: -webkit-flex;
+    	display: flex;
+		flex-direction: row;
+		width: 100%;
+		align-items: flex-stretch;
+  		justify-content: space-around;
+
+	}
+/*	.flex-links {
+		display: -webkit-flex;
+    	display: flex;
+		flex-direction: row;
+		width: 100%;
+		align-items: flex-stretch;
+  		justify-content: space-around;
+
+	}*/
+	/*.name{
+		width: 100%;
+		text-align: center;
+	}
+	.links{
+		width: 33%;
+		border-left: none;
+		border-right: none;
+		background-color: white;
+		top: 0px;
+		padding: 5px;
+	}*/
+	
+	.wrapper{
+		width: 100%;
+	}
+
+	.about{
+		display: -webkit-flex;
+    	display: flex;
+		width: 100%;
+		text-align: center;
+		margin-left: 0px;
+		align-items: center;
+  		justify-content: center;
+	}
+
+	.sidebar{
+		width: 100%;
+	}
+
+	img.network{
+		width: 85.6px;
+		height: 85.6px;
+	}
+
+	.connect{
+		display: -webkit-flex;
+    	display: flex;
+		width: 100%;
+		max-width: 640px;
+		text-align: left;
+		margin: 25px;
+/*		align-items: center;
+  		justify-content: center;*/
+
+	}
+}
+
+@media screen and (max-width: 980px) and (min-width: 769px) {
+/*	.about{
+		width: auto;
+	}*/
+		.body{
+		display: -webkit-flex;
+    	display: flex;
+		flex-direction: column;
+		width: 50%;
+		}
+
+		body{
+			clear: both;
+			margin: 0px;
+		}
+/*		.flex-port{
+		display: -webkit-flex;
+    	display: flex;
+		flex-direction: column;
+		width: 100%;
+		align-items: flex-stretch;
+  		justify-content: space-around;
+	}*/
+		.left{
+			clear: both;
+			float: left;
+			padding: 0px;
+			margin: 0px;
+		}
+		.right{
+			clear: both;
+			float: left;
+			padding: 0px;
+			margin: 0px;
+		}
+		.about{
+			width: auto;
+		}
+		.pic{
+			width: 279px;
+			height: 139px;
+		}
+			.flex-body {
+		display: -webkit-flex;
+    	display: flex;
+    	flex-direction: row-reverse;
+    	width: 100%;
+	}
+		.wrapper {
+			width: 100%;
+		}
+
+		footer {
+			width: 100%;
+		}
+
+		head{
+			margin: 0px;
+		}
+	.left{
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	.right{
+		width: 100%;
+		margin-right: 0px;
+	}
+
+	.pic{
+		width: 90%;
+		height: auto;
+	}
+	.foliotext{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	bottom: 75px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	bottom: 10px;
+}
+	.about{
+		width: 92%;
+	}
+}

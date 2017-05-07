@@ -236,7 +236,7 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 640px) {
-    .flex-heading {
+       .flex-heading {
     	display: -webkit-flex;
     	display: flex;
     	flex-direction: column;
@@ -289,65 +289,123 @@ input[type=submit] {
 		width: 100%;
 	}
 
-	img.portrait{
-		max-width: 100%;
-		height: auto;
-		margin: auto;
-		padding: none;
-	}
-
-	.about{
+	.flex-port{
 		display: -webkit-flex;
     	display: flex;
-		text-align: center;
-		margin-left: 0px;
-		align-items: center;
-  		justify-content: center;
-  		width: 100%;
+		flex-direction: column;
+/*		width: 100%;
+		align-items: flex-stretch;
+  		justify-content: space-around;*/
+	}
+	.about{
+		width: 92%;
+	}
+	.name{
+		width: 92%;
 	}
 
 	.sidebar{
 		width: 100%;
+		display: -webkit-flex;
+    	display: flex;
+		flex-direction: column;
+	}
+		img.network{
+		width: 85.6px;
+		height: 85.6px;
+	}
+	.container{
+	width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) and (min-width: 641px) {
+
+		.wrapper{
+		width: 100%;
 	}
 
-	img.network{
+		.sidebar{
+		width: 100%;
+		display: -webkit-flex;
+    	display: flex;
+		flex-direction: column;
+	}
+
+		.flex-icons {
+		display: -webkit-flex;
+    	display: flex;
+		flex-direction: row;
+		width: 100%;
+		align-items: flex-stretch;
+  		justify-content: space-around;
+
+	}
+
+		.flex-body {
+		display: -webkit-flex;
+    	display: flex;
+    	flex-direction: column-reverse;
+    	width: 100%;
+
+	}
+
+			img.network{
 		width: 85.6px;
 		height: 85.6px;
 	}
 
-	.connect{
+}
+
+@media screen and (max-width: 980px) and (min-width: 769px) {
+
+	.wrapper{
+		width: 100%;
+	}
+
+
+
+	.body{
+		width: 67%;
+	}
+
+	.sidebar{
+		width: 28%;
+	}
+
+	.about{
+		width: 90%;
+	}
+
+	.container{
+		width: 90%;
+	}
+	.flex-icons{
 		display: -webkit-flex;
     	display: flex;
+		flex-direction: row;
 		width: 100%;
-		text-align: center;
-		margin: 25px;
-		align-items: center;
-  		justify-content: center;
-
-	}
-/*	h2{
-		margin: 0px;
-	}
-
-	head{
-		margin-left: 25px;
-		margin-right: 25px;
-		
-	}
-	
-	body{
-		margin-left: 25px;
-		margin-right: 25px;
-		
+		align-items: flex-stretch;
+  		justify-content: space-around;
 
 	}
 
-	footer{
-		margin-left: 25px;
-		margin-right: 25px;
+	img.network{
+		height: auto;
+		width: 90%;
+		max-width: 75.6px;
 
-
-	}*/
+	}
 
 }
 
+/*	textarea{
+	width: 90%;
+
+
+}
+
+input[type=text], select {
+    width: 90%;
+
+}*/
